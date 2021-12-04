@@ -7,12 +7,15 @@ import (
 )
 
 func main() {
-	part1()
-	part2()
-
-}
-func part1() {
 	start := time.Now()
+	c.Print("Part1: ", part1())
+	c.Print("Took: ", time.Since(start).String())
+	start = time.Now()
+	//c.Print("Part2: ", part2())
+	c.Print("Took: ", time.Since(start).String())
+}
+
+func part1() int {
 	inp := c.ReadInputFile()
 
 	sum := 0
@@ -20,11 +23,9 @@ func part1() {
 		sum += v
 	}
 
-	c.Print("Part1: ", sum)
-	c.Print("Took: ", time.Since(start).String())
+	return sum
 }
-func part2() {
-	start := time.Now()
+func part2() int {
 	inp := c.ReadInputFile()
 
 	sum := 0
@@ -32,6 +33,5 @@ func part2() {
 		sum += v
 	}
 
-	c.Print("Part2: ", sum)
-	c.Print("Took: ", time.Since(start).String())
+	return sum
 }
