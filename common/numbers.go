@@ -67,3 +67,21 @@ func Sum(nums []int) int {
 	}
 	return sum
 }
+
+// AbsInt returns the absolute values for two integers as an integer
+func AbsInt(num1, num2 int) int {
+	num1 = num1 - num2
+	if num1 < 0 {
+		num1 *= -1
+	}
+	return num1
+}
+
+// ConsecutiveSum returns the sum of all the previous values from 1..num
+func ConsecutiveSum(num int) int {
+	if num == 0 {
+		return 0
+	}
+	v := float32(num)
+	return int(v * ((1 + v) / 2))
+}
