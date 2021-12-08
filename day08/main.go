@@ -73,14 +73,14 @@ func part2() int {
 					w[v] = 4
 					n[4] = v
 				} else if len(v) == 5 {
-					if len(remove(n[7], v)) == 2 {
+					if n[7] != "" && len(remove(n[7], v)) == 2 {
 						w[v] = 3
 						n[3] = v
 					} else {
-						if len(remove(n[4], v)) == 2 {
+						if n[4] != "" && len(remove(n[4], v)) == 2 {
 							w[v] = 5
 							n[5] = v
-						} else {
+						} else if n[7] != "" && len(remove(n[7], v)) == 3 {
 							w[v] = 2 // Wrong
 							n[2] = v // Wrong
 						}
@@ -100,13 +100,16 @@ func part2() int {
 				}
 			}
 		}
-		return -1
-
+		num := 0
 		for _, s := range strings.Split(g[1], " ") {
-			if len(s) == 2 || len(s) == 3 || len(s) == 4 || len(s) == 7 {
-				sum++
-			}
+
+			a := strings.Split(s, "")
+			sort.Strings(a)
+			s = strings.Join(a, "")
+
+			num = num*10 + w[s]
 		}
+		sum += num
 	}
 
 	return sum
@@ -121,7 +124,7 @@ func getMissing(longStr, shortStr string) string {
 }
 func remove(str, from string) string {
 	for i := range str {
-		from = strings.ReplaceAll(string(str[i]), from, "")
+		from = strings.ReplaceAll(from, string(str[i]), "")
 	}
 	return from
 }
