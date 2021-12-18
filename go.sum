@@ -1,6 +1,11 @@
+github.com/RyanCarrier/dijkstra v1.1.0 h1:/NDihjfJA3CxFaZz8EdzTwdFKFZDvvB881OVLdakRcI=
+github.com/RyanCarrier/dijkstra v1.1.0/go.mod h1:5agGUBNEtUAGIANmbw09fuO3a2htPEkc1jNH01qxCWA=
+github.com/RyanCarrier/dijkstra-1 v0.0.0-20170512020943-0e5801a26345/go.mod h1:OK4EvWJ441LQqGzed5NGB6vKBAE34n3z7iayPcEwr30=
+github.com/albertorestifo/dijkstra v0.0.0-20160910063646-aba76f725f72/go.mod h1:o+JdB7VetTHjLhU0N57x18B9voDBQe0paApdEAEoEfw=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/jerpa/adventofcode2021/common v0.0.0-20211129151452-03a0e94209c0 h1:62mLcs0KDno+v4QVukheuXIpEFp4VhaC0AQmVc135pA=
 github.com/jerpa/adventofcode2021/common v0.0.0-20211129151452-03a0e94209c0/go.mod h1:U8lKh/0aRZiOx95W2GLItUqBu6N/1l3y2l2oqLXueSY=
 github.com/jerpa/adventofcode2021/common v0.0.0-20211207053204-151849542a7e h1:jawuy5p7ZEIpHSzGEN3fzYMmc2TGD69bIxXoSKT8idM=
 github.com/jerpa/adventofcode2021/common v0.0.0-20211207053204-151849542a7e/go.mod h1:U8lKh/0aRZiOx95W2GLItUqBu6N/1l3y2l2oqLXueSY=
+github.com/mattomatic/dijkstra v0.0.0-20130617153013-6f6d134eb237/go.mod h1:UOnLAUmVG5paym8pD3C4B9BQylUDC2vXFJJpT7JrlEA=
